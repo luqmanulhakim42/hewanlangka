@@ -27,7 +27,7 @@
     </div>
 
 </center>
-<div class="container" style="margin: 5%;">
+<div class="container" >
   <div class="row">
     <?php 
     if(mysqli_num_rows($query) > 0){

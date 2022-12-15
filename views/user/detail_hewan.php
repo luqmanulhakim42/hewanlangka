@@ -4,13 +4,13 @@
     $query = mysqli_query($conn, $sql);
     $hewan = mysqli_fetch_assoc($query);
 ?>
-<div class="container" style="margin: 5%;">
+<div class="container">
   <div class="row">
     <div class="col-lg-12 col-sm-12" style="padding: 1%;">
       <div class="p-3 border bg-light">
             <div class="card">
                 <?php $id = "id-".$hewan['animal_id']; ?>
-                <img src="<?php echo $hewan['animal_picture']; ?>" class="card-img-top" alt="..." style="height: 400px;object-fit: cover;">
+                <img src="<?php echo $hewan['animal_picture']; ?>" class="card-img-top" alt="..." style="height: 100%;object-fit: cover;">
                 <div class="card-body">
                     <h4 class="card-title"><?php echo $hewan['animal_name']; ?></h4>
                     <p class="card-title"><b>Jenis :</b> <?php echo $hewan['animal_type']; ?></p>
